@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EMR Project</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<header class="header">
+		<h1>Patient Name; Gender; DOB; MRN (Relevant Identifying Information)</h1>
+	</header>
+	<div id="noteUpdateField">
+		<div id="NoteUpdateH&P">
+			<form id="noteFormH&P">
+				<textarea rows="6" cols="100" id="chiefComplaint" placeholder="Chief Complaint" required></textarea><br>
+				<textarea rows="6" cols="100" id="HPI" placeholder="HPI" required></textarea><br>
+				<button id="addProblem" type="button">Add Other Current Medical Problems</button>
+<!-- 			<textarea rows="6" cols="100" id="PMH" placeholder="PMH"
+				required></textarea><br>
+				<textarea rows="6" cols="100" id="PSH" placeholder="PSH"
+				required></textarea><br>
+				<textarea rows="6" cols="100" id="socialHx" placeholder="Social Hx" required></textarea><br>
+				<textarea rows="6" cols="100" id="famHx" placeholder="Family Hx" required></textarea><br>
+				<textarea rows="6" cols="100" id="currentMeds" placeholder="Current Medications" required></textarea><br> -->
+				<button id="noteUpdate" type="button">Update Note</button>
+			</form>
+		</div>
+		<div id="NoteUpdateProgress">
+			<form id="noteFormProgress">
+
+			</form>
+		</div>
+	</div>
+	<hr>
+	<div id="globalInfo">
+		<h2>Current Comprehensive Clinical Status of the Patient</h2>
+		<div class="summaryInfo">
+			<p id="vitals">Vital Signs</p>
+			<p id="labs">Labs</p>
+	</div>
+	<div class="problemTemplate">
+		<div id="problem">
+			<h3>Problem</h3>
+			<p id="status">Problem Status</p>
+			<p id="management">Current management</p>
+		</div>
+	</div>
+</body>
+</html>

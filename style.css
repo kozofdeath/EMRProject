@@ -1,0 +1,12 @@
+header {
+	text-align:center;
+}
+
+#noteUpdateField input {
+	width:500px;
+	height:200px;
+}
+
+.problemTemplate {
+	display:none;
+}
